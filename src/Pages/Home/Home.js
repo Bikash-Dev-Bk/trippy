@@ -1,5 +1,5 @@
 import React from 'react';
-import Bannner from './Banner/Bannner';
+import Banner from './Banner/Banner';
 import Services from './Services/Services';
 import Gallery from './Gallery/Gallery';
 import Clients from './Clients/Clients';
@@ -8,7 +8,7 @@ import Team from './Team/Team';
 const Home = () => {
     return (
         <div>
-            <Bannner></Bannner>
+            <Banner></Banner>
             <Services></Services>
             <Gallery></Gallery>
             <Clients></Clients>

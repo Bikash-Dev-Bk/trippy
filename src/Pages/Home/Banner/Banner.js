@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Bannner = () => {
+const Banner = () => {
     return (
         <div>
             <h1>Banner</h1>
@@ -8,4 +8,4 @@ const Bannner = () => {
     );
 };
 
-export default Bannner;
+export default Banner;
