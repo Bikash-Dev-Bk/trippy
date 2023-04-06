@@ -5,7 +5,7 @@ import Button from "../../components/Button/Button";
 const About = () => {
   return (
     <div>
-      <h1 className="text-4xl font-bold text-center mt-5">Who We Are?</h1>
+      <h1 className="text-center font-bold text-4xl mb-5 mt-10">Who We Are?</h1>
       <div className="hero w-full my-20">
         <div className="hero-content grid gap-10 md:grid-cols-2 flex-col lg:flex-row">
           <div className="text-center lg:text-left">

@@ -8,7 +8,7 @@ const ServiceCard = ({ service }) => {
       <img className="p-5 serviceImg" src={img} alt="NoImage" />
       <div className="card-body">
         <h2 className="card-title font-bold">{title}</h2>
-        <p>{description}</p>
+        <p className="text-justify">{description}</p>
       </div>
     </div>
   );

@@ -23,6 +23,8 @@ const router = createBrowserRouter([
       {
         path: "/places",
         element: <Places></Places>,
+        loader: () =>
+          fetch('http://localhost:5000/places'),
       },
       {
         path: "/booking",

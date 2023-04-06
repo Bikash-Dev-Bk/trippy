@@ -9,7 +9,7 @@ const TeamCard = ({ teem }) => {
       <div className="card-body">
         <h2 className="text-xl font-bold text-center">{name}</h2>
         <p className="text-xl font-semibold text-center">{role}</p>
-        <p>{description}</p>
+        <p className="text-justify">{description}</p>
       </div>
     </div>
   );
