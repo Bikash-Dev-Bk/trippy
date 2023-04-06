@@ -5,7 +5,7 @@ const ClientCard = ({ review }) => {
   const { name, logo, img, customer_review } = review;
 
   return (
-    <div className="card card-compact w-96 bg-base-100 shadow-xl">
+    <div className="card card-compact w-96 bg-base-100 shadow-2xl">
       <img src={logo} className="reviewImg ml-5 mt-5" alt="Shoes" />
       <div className="card-body">
         <p className="text-justify">{customer_review}</p>
