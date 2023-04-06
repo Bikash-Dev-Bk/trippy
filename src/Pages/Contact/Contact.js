@@ -27,21 +27,21 @@ const Contact = () => {
                   name="call"
                   className="text-yellow-300 text-xl"
                 ></ion-icon>
-                <span>+88 01710000001</span>
+                <span>Phone: +88 01710000001</span>
               </div>
               <div className="inline-flex space-x-2 items-center">
                 <ion-icon
                   name="mail"
                   className="text-yellow-300 text-xl"
                 ></ion-icon>
-                <span>support@test.com</span>
+                <span>Email: support@trippy.com</span>
               </div>
               <div className="inline-flex space-x-2 items-center">
                 <ion-icon
                   name="location"
                   className="text-yellow-300 text-xl"
                 ></ion-icon>
-                <span>Dhaka, Bangladesh</span>
+                <span>Address: Mohammadpur, Dhaka, Bangladesh</span>
               </div>
             </div>
 
