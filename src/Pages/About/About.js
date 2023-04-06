@@ -18,23 +18,23 @@ const About = () => {
           <div>
             <h1 className="text-4xl font-semibold">We Are Travel Experts</h1>
             <p className="py-6 text-justify leading-relaxed">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here,
-              content here', making it look like readable English. Many desktop
-              publishing packages and web page editors now use Lorem Ipsum as
-              their default model text, and a search for 'lorem ipsum' will
-              uncover many web sites still in their infancy. Various versions
-              have evolved over the years, sometimes by accident, sometimes on
-              purpose.Various versions have evolved over the years, sometimes by accident, sometimes on purpose.
+              Trippy is a travel agency that specializes in creating
+              unforgettable travel experiences. We offer a wide range of travel
+              packages to destinations all over the world, including exotic
+              beaches, bustling cities, and remote wilderness areas. Our team of
+              expert travel agents works with you to create a customized
+              itinerary that suits your preferences and budget, taking care of
+              all the details from flights and accommodations to activities and
+              transportation. We're committed to providing exceptional customer
+              service and support every step of the way, and are available 24/7
+              to answer your questions and ensure that your travel experience is
+              as smooth and stress-free as possible. Let us inspire and empower
+              you to explore the world and make lifelong memories with Trippy.
             </p>
             <Button>Learn More</Button>
           </div>
         </div>
       </div>
-
-      
     </div>
   );
 };

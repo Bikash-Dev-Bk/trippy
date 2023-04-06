@@ -16,9 +16,8 @@ const Contact = () => {
           <div className="flex flex-col md:flex-1 space-y-8 justify-between">
             <div>
               <h1 className="font-bold text-4xl tracking-wide">Contact Us</h1>
-              <p className="pt-2 text-yellow-100 text-sm">
-                Got a technical issue? Want to send feedback about a beta
-                feature? Need details about our Business plan? Let us know.
+              <p className="pt-2 text-yellow-100 text-sm text-justify">
+              We're here to help! If you have any questions or concerns about our products or services, please don't hesitate to contact us. You can reach us by phone, email, or by filling out the contact form below. Our friendly customer support team is available 24/7 to assist you.
               </p>
             </div>
             <div className="flex flex-col space-y-4 sm:space-y-6">
