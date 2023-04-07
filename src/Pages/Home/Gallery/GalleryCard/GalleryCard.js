@@ -5,9 +5,9 @@ const GalleryCard = ({ gallery }) => {
   const { title, img } = gallery;
   return (
     <div className="galleryCardContainer">
-      <img src={img} alt="Avatar" class="galleryCardImage"  />
+      <img src={img} alt="Avatar" className="galleryCardImage"  />
       
-        <p class="galleryCardTitle">{title}</p>
+        <p className="galleryCardTitle">{title}</p>
       
     </div>
   );
