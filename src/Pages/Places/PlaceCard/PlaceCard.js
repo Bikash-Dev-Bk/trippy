@@ -4,7 +4,7 @@ const PlaceCard = ({ place }) => {
   const { name, price, img, description } = place;
 
   return (
-    <div className="card card-compact w-96 bg-base-100 shadow-xl">
+    <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none">
       <img src={img} alt="Shoes" />
       <div className="card-body">
         <h2 className="card-title">{name}</h2>

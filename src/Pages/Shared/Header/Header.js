@@ -7,21 +7,21 @@ const Header = () => {
   const menuItems = (
     <>
       <li>
-        <Link to="/" className='btn btn-ghost normal-case  text-base'>Home</Link>
+        <Link to="/" className='btn btn-ghost normal-case  text-base Routes'>Home</Link>
       </li>
 
       <li>
-        <Link to="/about" className='btn btn-ghost normal-case  text-base'>About Us</Link>
+        <Link to="/about" className='btn btn-ghost normal-case  text-base Routes'>About Us</Link>
       </li>
       <li>
-        <Link to="/places" className='btn btn-ghost normal-case  text-base'>Places</Link>
+        <Link to="/places" className='btn btn-ghost normal-case  text-base Routes'>Places</Link>
       </li>
 
       <li>
-        <Link to="/booking" className='btn btn-ghost normal-case  text-base'>Booking</Link>
+        <Link to="/booking" className='btn btn-ghost normal-case  text-base Routes'>Booking</Link>
       </li>
       <li>
-        <Link to="/contact" className='btn btn-ghost normal-case  text-base'>Contact Us</Link>
+        <Link to="/contact" className='btn btn-ghost normal-case  text-base Routes'>Contact Us</Link>
       </li>
     </>
   );

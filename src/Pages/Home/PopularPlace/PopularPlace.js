@@ -1,98 +1,95 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import paris from "../../../assets/images/popularPlace/paris.jpg";
+import santorini from "../../../assets/images/popularPlace/Santorini.jpg";
+import tokyo from "../../../assets/images/popularPlace/Tokyo.jpg";
+import bali from "../../../assets/images/popularPlace/bali.jpg";
+import dubai from "../../../assets/images/popularPlace/dubai.jpg";
 
 const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
+    slidesToSlide: 1,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 2,
+    slidesToSlide: 1, 
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
+    slidesToSlide: 1,
   },
 };
 
 const PopularPlace = () => {
-  const [popularPlaces, setPopularPlaces] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:5000/popularplaces")
-      .then((res) => res.json())
-      .then((data) => setPopularPlaces(data));
-  }, []);
-
-  console.log(" inside popular place",popularPlaces)
-
   return (
-    <div className="my-20 py-10 bg-base-200">
-      <h1 className="text-4xl font-bold pb-10">Popular Tour Places</h1>
+    <div>
+      <h1 className="font-bold text-4xl text-center mt-20 mb-12">
+        Popular Tour Places
+      </h1>
       <Carousel
         swipeable={false}
         draggable={false}
+        showDots={true}
         responsive={responsive}
-        ssr={true} // means to render carousel on server-side.
+        ssr={true} 
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={3000}
-        keyBoardControl={true}
-        customTransition="all .2"
-        transitionDuration={2000}
+        autoPlaySpeed={1500}
+        keyBoardControl={false}
+        customTransition="all .5"
+        transitionDuration={500}
         containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile"]}
+        removeArrowOnDeviceType={["tablet", "mobile" , "desktop"]}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
         <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none">
-          <img src={popularPlaces[0].img} alt="Shoes" />
+          <img src={paris} alt="Shoes" />
           <div className="card-body">
-            <h2 className="font-bold text-2xl">{popularPlaces[0].name}</h2>
-            <h2 >{popularPlaces[0].country}</h2>
-            <p className="font-semibold text-xl text-yellow-500">{popularPlaces[0].price}</p>
+            <h2 className="font-bold text-2xl">Paris</h2>
+            <h2 className="font-semibold text-xl">France</h2>
+            <p className="font-semibold text-xl text-yellow-500">$2800</p>
           </div>
         </div>
-        <div className="card card-compact gap-2 w-96 bg-base-100 shadow-2xl rounded-none">
-          <img src={popularPlaces[1].img} alt="Shoes" />
+        <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none ">
+          <img src={santorini} alt="Shoes" />
           <div className="card-body">
-            <h2 className="font-bold text-2xl">{popularPlaces[1].name}</h2>
-            <h2 >{popularPlaces[1].country}</h2>
-            <p className="font-semibold text-xl text-yellow-500">{popularPlaces[1].price}</p>
+            <h2 className="font-bold text-2xl">Santorini</h2>
+            <h2 className="font-semibold text-xl">Greece</h2>
+            <p className="font-semibold text-xl text-yellow-500">$1800</p>
           </div>
         </div>
-        <div className="card card-compact gap-2 w-96 bg-base-100 shadow-2xl rounded-none">
-          <img src={popularPlaces[2].img} alt="Shoes" />
+        <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none">
+          <img src={tokyo} alt="Shoes" />
           <div className="card-body">
-            <h2 className="font-bold text-2xl">{popularPlaces[2].name}</h2>
-            <h2 >{popularPlaces[2].country}</h2>
-            <p className="font-semibold text-xl text-yellow-500">{popularPlaces[2].price}</p>
+            <h2 className="font-bold text-2xl">Tokyo</h2>
+            <h2 className="font-semibold text-xl">Japan</h2>
+            <p className="font-semibold text-xl text-yellow-500">$2200</p>
           </div>
         </div>
-        <div className="card card-compact gap-2 w-96 bg-base-100 shadow-2xl rounded-none">
-          <img src={popularPlaces[3].img} alt="Shoes" />
+        <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none">
+          <img src={bali} alt="Shoes" />
           <div className="card-body">
-            <h2 className="font-bold text-2xl">{popularPlaces[3].name}</h2>
-            <h2 >{popularPlaces[3].country}</h2>
-            <p className="font-semibold text-xl text-yellow-500">{popularPlaces[3].price}</p>
+            <h2 className="font-bold text-2xl">Bali</h2>
+            <h2 className="font-semibold text-xl">Indonesia</h2>
+            <p className="font-semibold text-xl text-yellow-500">$1400</p>
           </div>
         </div>
-        <div className="card card-compact gap-2 w-96 bg-base-100 shadow-2xl rounded-none">
-          <img src={popularPlaces[4].img} alt="Shoes" />
+        <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none">
+          <img src={dubai} alt="Shoes" />
           <div className="card-body">
-            <h2 className="font-bold text-2xl">{popularPlaces[4].name}</h2>
-            <h2 >{popularPlaces[4].country}</h2>
-            <p className="font-semibold text-xl text-yellow-500">{popularPlaces[4].price}</p>
+            <h2 className="font-bold text-2xl">Dubai</h2>
+            <h2 className="font-semibold text-xl">UAE</h2>
+            <p className="font-semibold text-xl text-yellow-500">$2500</p>
           </div>
         </div>
       </Carousel>
+      ;
     </div>
   );
 };
