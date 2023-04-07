@@ -1,0 +1,18 @@
+.placeFooter{
+    background-color: #F9A825;
+    
+  }
+  .placeButton{
+    background-color: white;
+    color: #F9A825;
+    font-weight: 700;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+}
+
+.placeButton:hover{
+    background-color: #2259fc;
+    color: white;
+    border: none;
+}

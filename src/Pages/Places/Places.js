@@ -1,11 +1,12 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import PlaceCard from "./PlaceCard/PlaceCard";
+import "./Places.css";
 
 const Places = () => {
   const places = useLoaderData();
   return (
-    <div >
+    <div>
       <h2 className="text-center font-bold text-4xl mb-5 mt-10">Places</h2>
 
       <p className="text-justify my-10 mx-5">
@@ -25,6 +26,17 @@ const Places = () => {
             <PlaceCard key={place.id} place={place}></PlaceCard>
           ))}
         </div>
+      </div>
+      <div className="max-w-full my-12 py-20 text-center placeFooter">
+        <h1 className="mb-5 text-4xl font-bold">
+          Are You Looking For Custom Tour Package?
+        </h1>
+        <p className="mb-5 font-semibold">
+          We Offer A Wide Range Of Procedures To Help You Get The Perfect Smile
+        </p>
+        <Link to={"/booking"}>
+          <button className="placeButton">Book A Tour</button>
+        </Link>
       </div>
     </div>
   );
