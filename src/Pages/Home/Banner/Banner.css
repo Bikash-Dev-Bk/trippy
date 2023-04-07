@@ -1,5 +1,5 @@
 .banner-container {
-    background-image: 
+    background-image: linear-gradient(rgba(1, 1, 0, 0.1), rgba(1, 1, 0, 0.2)),
       url('../../../assets/images/Banner.jpg');
     background-size: cover;
     background-attachment: fixed;

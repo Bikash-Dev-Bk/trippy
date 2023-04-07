@@ -1,5 +1,5 @@
 .header-image img{
-    height: 50px;
+    height: 40px;
     width: 100%;
 }
 .Header{
@@ -7,4 +7,9 @@
     color: white;
     /* position: sticky;
     top: 0; */
+}
+.mobileTabNav{
+    background-color: white;
+    font-weight: 600;
+    color: black;
 }

@@ -1,0 +1,9 @@
+.footerContainer{
+    background-color: #212121;
+    color: white;
+}
+
+.footer-image img{
+    height: 60px;
+    width: 100%;
+}
