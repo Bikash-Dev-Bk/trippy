@@ -1,16 +1,25 @@
-.header-image img{
-    height: 40px;
-    width: 100%;
+.header-image img {
+  height: 40px;
+  width: 100%;
 }
-.Header{
-    background-color: #212121;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+.Header {
+  background-color: #212121;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-.mobileTabNav{
-    background-color: white;
-    font-weight: 600;
-    color: black;
+.mobileTabNav {
+  background-color: white;
+  font-weight: 600;
+  color: black;
+}
+
+
+li:hover {
+  color: #f9a825;
+}
+
+li:active {
+  color: #f9a825;
 }
