@@ -10,13 +10,13 @@ const Booking = () => {
   
 
   return (
-    <div className=" my-5">
+    <div className="booking-container mb-5 pt-5">
       <h1 className="text-center font-bold text-4xl mb-5 mt-10">Book Your Dream Vacation Today!</h1>
       <p className="text-justify my-10 mx-5">Welcome to our travel agency! We specialize in creating personalized travel itineraries that cater to your unique preferences and interests. Please fill out the booking form below with your destination, travel dates, and any additional requests you may have, and one of our experienced agents will be in touch with you shortly to discuss your options and provide you with a quote. We look forward to helping you plan the trip of a lifetime!</p>
-      <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 booking-form-container">
         <div className="mb-4">
           <label
-            className="block text-gray-700 font-bold mb-2"
+            className="block text-white font-bold mb-2"
             htmlFor="destination"
           >
             Destination
@@ -31,7 +31,7 @@ const Booking = () => {
         </div>
         <div className="mb-4">
           <label
-            className="block text-gray-700 font-bold mb-2"
+            className="block text-white font-bold mb-2"
             htmlFor="travel_days"
           >
             How Many Days
@@ -46,7 +46,7 @@ const Booking = () => {
         </div>
         <div className="mb-4">
           <label
-            className="block text-gray-700 font-bold mb-2"
+            className="block text-white font-bold mb-2"
             htmlFor="accommodation"
           >
             Accommodation
@@ -63,7 +63,7 @@ const Booking = () => {
         </div>
         <div className="mb-4">
           <label
-            className="block text-gray-700 font-bold mb-2"
+            className="block text-white font-bold mb-2"
             htmlFor="transportation"
           >
             Transportation
@@ -80,7 +80,7 @@ const Booking = () => {
         </div>
         <div className="mb-4">
           <label
-            className="block text-gray-700 font-bold mb-2"
+            className="block text-white font-bold mb-2"
             htmlFor="activities"
           >
             Activities
@@ -92,7 +92,7 @@ const Booking = () => {
               name="activities"
               value="hiking"
             />
-            <label htmlFor="hiking" className="ml-2">
+            <label htmlFor="hiking" className="ml-2 text-white">
               Hiking
             </label>
           </div>
@@ -103,7 +103,7 @@ const Booking = () => {
               name="activities"
               value="sightseeing"
             />
-            <label htmlFor="sightseeing" className="ml-2">
+            <label htmlFor="sightseeing" className="ml-2 text-white">
               Sightseeing
             </label>
           </div>
@@ -114,14 +114,14 @@ const Booking = () => {
               name="activities"
               value="water_sports"
             />
-            <label htmlFor="water_sports" className="ml-2">
+            <label htmlFor="water_sports" className="ml-2 text-white">
               Water Sports
             </label>
           </div>
         </div>
         <div className="mb-4">
           <label
-            className="block text-gray-700 font-bold mb-2"
+            className="block text-white font-bold mb-2"
             htmlFor="number_of_guests"
           >
             Number of Guests
@@ -135,7 +135,7 @@ const Booking = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
+          <label className="block text-white font-bold mb-2" htmlFor="name">
             Name
           </label>
           <input
@@ -147,7 +147,7 @@ const Booking = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 font-bold mb-2" htmlFor="email">
+          <label className="block text-white font-bold mb-2" htmlFor="email">
             Email
           </label>
           <input
@@ -160,7 +160,7 @@ const Booking = () => {
         </div>
         <div className="mb-4">
           <label
-            className="block text-gray-700 font-bold mb-2"
+            className="block text-white font-bold mb-2"
             htmlFor="phone_number"
           >
             Phone Number
@@ -175,13 +175,13 @@ const Booking = () => {
         </div>
         <div className="mb-4">
           <label
-            className="block text-gray-700 font-bold mb-2"
+            className="block text-white font-bold mb-2"
             htmlFor="message"
           >
             Message
           </label>
           <textarea
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700  leading-tight focus:outline-none focus:shadow-outline"
             id="message"
             rows="3"
             placeholder="Enter your message"

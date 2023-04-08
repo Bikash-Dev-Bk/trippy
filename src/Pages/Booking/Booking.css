@@ -1,0 +1,12 @@
+.booking-container {
+    background-color: #F9A825;
+    color: black;
+  }
+.booking-form-container {
+    background-image: linear-gradient(rgba(1, 1, 0, 0.1), rgba(1, 1, 0, 0.2)),
+      url('../../assets/images/bookingbg.jpg');
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
