@@ -23,8 +23,7 @@ const router = createBrowserRouter([
       {
         path: "/places",
         element: <Places></Places>,
-        loader: () =>
-          fetch('http://localhost:5000/places'),
+        loader: () => fetch("https://trippy-server.vercel.app/places"),
       },
       {
         path: "/booking",

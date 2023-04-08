@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import GalleryCard from './GalleryCard/GalleryCard';
+import React, { useEffect, useState } from "react";
+import GalleryCard from "./GalleryCard/GalleryCard";
 
 const Gallery = () => {
-    const [gallerys, setGallerys] = useState([]);
+  const [gallerys, setGallerys] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/gallery")
+    fetch("https://trippy-server.vercel.app/gallery")
       .then((res) => res.json())
       .then((data) => setGallerys(data));
   }, []);
