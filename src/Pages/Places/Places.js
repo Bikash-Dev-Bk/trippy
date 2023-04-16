@@ -29,7 +29,7 @@ const Places = () => {
           ))}
         </div>
       </div>
-      <div className="max-w-full my-12 py-20 text-center placeFooter">
+      <div className="max-w-full mt-12 py-20 text-center placeFooter">
         <h1 className="mb-5 text-4xl font-bold">
           Are You Looking For Custom Tour Package?
         </h1>

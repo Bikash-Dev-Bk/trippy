@@ -10,7 +10,7 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="antialiased bg-yellow-700">
+    <div className="antialiased bg-yellow-700 py-20">
       <div className="flex w-full  justify-center items-center ">
         <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0  w-5/6 max-w-screen-2xl p-10 sm:p-8  text-white overflow-hidden">
           <div className="flex flex-col md:flex-1 space-y-8 justify-between">
