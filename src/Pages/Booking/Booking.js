@@ -10,10 +10,10 @@ const Booking = () => {
   
 
   return (
-    <div className="booking-container mb-5 pt-5">
+    <div className="booking-container pt-5">
       <h1 className="text-center font-bold text-4xl mb-5 mt-10">Book Your Dream Vacation Today!</h1>
       <p className="text-justify my-10 mx-5">Welcome to our travel agency! We specialize in creating personalized travel itineraries that cater to your unique preferences and interests. Please fill out the booking form below with your destination, travel dates, and any additional requests you may have, and one of our experienced agents will be in touch with you shortly to discuss your options and provide you with a quote. We look forward to helping you plan the trip of a lifetime!</p>
-      <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 booking-form-container">
+      <form className="bg-white shadow-md rounded lg:px-40 px-5 pt-6 pb-8  booking-form-container ">
         <div className="mb-4">
           <label
             className="block text-white font-bold mb-2"

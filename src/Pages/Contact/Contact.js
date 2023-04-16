@@ -10,9 +10,9 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="antialiased bg-gray-100">
-      <div className="flex w-full my-5 justify-center items-center">
-        <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-yellow-700 w-full max-w-7xl p-5 sm:p-8  shadow-lg text-white overflow-hidden">
+    <div className="antialiased bg-yellow-700">
+      <div className="flex w-full  justify-center items-center ">
+        <div className="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0  w-5/6 max-w-screen-2xl p-10 sm:p-8  text-white overflow-hidden">
           <div className="flex flex-col md:flex-1 space-y-8 justify-between">
             <div>
               <h1 className="font-bold text-4xl tracking-wide">Contact Us</h1>

@@ -47,6 +47,7 @@ const PopularPlace = () => {
         removeArrowOnDeviceType={["tablet", "mobile" , "desktop"]}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
+        className="max-w-screen-xl mx-auto"
       >
         <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none">
           <img src={paris} alt="Shoes" />

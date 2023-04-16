@@ -9,6 +9,7 @@ const Places = () => {
     <div>
       <h2 className="text-center font-bold text-4xl mb-5 mt-10">Places</h2>
 
+      <div className="max-w-screen-xl mx-auto">
       <p className="text-justify my-10 mx-5">
         At Trippy, we offer a wide range of destinations for you to explore.
         From the romantic charm of Paris to the stunning beauty of Bali, the
@@ -20,6 +21,7 @@ const Places = () => {
         relaxation, or cultural immersion, our team of experts will help you
         create the perfect itinerary for your dream vacation.
       </p>
+      </div>
       <div className="flex justify-center my-5">
         <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-6">
           {places.map((place) => (

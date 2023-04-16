@@ -16,7 +16,7 @@ const Team = () => {
         Our Professional Team
       </h2>
       <div className="flex justify-center my-5">
-        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-6">
+        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-6 max-w-screen-xl">
           {team.map((teem) => (
             <TeamCard key={teem.id} teem={teem}></TeamCard>
           ))}

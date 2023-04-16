@@ -18,7 +18,7 @@ const Banner = () => {
             circles.
           </p>
           <Link to={"/booking"}>
-            <Button>Book A Tour me</Button>
+            <Button>Book A Tour</Button>
           </Link>
         </div>
       </div>

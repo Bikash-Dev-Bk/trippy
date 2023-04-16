@@ -15,7 +15,7 @@ const Clients = () => {
     <div className="clients py-10">
       <h2 className="font-bold text-4xl text-center text-black py-5">Our Happy Clients</h2>
       <div className="flex justify-center my-5">
-        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-6">
+        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-6 ">
           {reviews.map((review) => (
             <ClientCard key={review.id} review={review}></ClientCard>
           ))}
