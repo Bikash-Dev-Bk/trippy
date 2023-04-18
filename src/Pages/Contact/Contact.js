@@ -5,7 +5,10 @@ import {
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
+  FaPhone
 } from "react-icons/fa";
+import { GrMail, GrLocation } from "react-icons/gr";
+import { MdLocationPin } from "react-icons/md";
 import "./Contact.css";
 
 const Contact = () => {
@@ -17,29 +20,24 @@ const Contact = () => {
             <div>
               <h1 className="font-bold text-4xl tracking-wide">Contact Us</h1>
               <p className="pt-2 text-yellow-100 text-sm text-justify">
-              We're here to help! If you have any questions or concerns about our products or services, please don't hesitate to contact us. You can reach us by phone, email, or by filling out the contact form below. Our friendly customer support team is available 24/7 to assist you.
+                We're here to help! If you have any questions or concerns about
+                our products or services, please don't hesitate to contact us.
+                You can reach us by phone, email, or by filling out the contact
+                form below. Our friendly customer support team is available 24/7
+                to assist you.
               </p>
             </div>
             <div className="flex flex-col space-y-4 sm:space-y-6">
               <div className="inline-flex space-x-2 items-center">
-                <ion-icon
-                  name="call"
-                  className="text-yellow-300 text-xl"
-                ></ion-icon>
+              <FaPhone />
                 <span>Phone: +88 01710000001</span>
               </div>
               <div className="inline-flex space-x-2 items-center">
-                <ion-icon
-                  name="mail"
-                  className="text-yellow-300 text-xl"
-                ></ion-icon>
+                <GrMail/>
                 <span>Email: support@trippy.com</span>
               </div>
               <div className="inline-flex space-x-2 items-center">
-                <ion-icon
-                  name="location"
-                  className="text-yellow-300 text-xl"
-                ></ion-icon>
+                <MdLocationPin/>
                 <span>Address: Mohammadpur, Dhaka, Bangladesh</span>
               </div>
             </div>
