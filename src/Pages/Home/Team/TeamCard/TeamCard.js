@@ -6,7 +6,7 @@ const TeamCard = ({ teem }) => {
   const { name, img, role, description } = teem;
 
   return (
-    <div className="card  card-compact w-full bg-base-100">
+    <div className="card  card-compact w-96 bg-base-100">
       <img className=" teamImg" src={img} alt="team member" />
       <div className="card-body">
         <h2 className="text-xl font-bold text-center">{name}</h2>
