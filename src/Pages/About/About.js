@@ -4,7 +4,7 @@ import Button from "../../components/Button/Button";
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className=" max-w-screen-xl mx-auto lg:px-5">
       <h1 className="text-center font-bold text-4xl mb-5 mt-10">Who We Are?</h1>
       <div className="hero w-full my-20">
         <div className="hero-content grid gap-10 md:grid-cols-2 flex-col lg:flex-row">
