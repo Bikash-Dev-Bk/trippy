@@ -25,3 +25,9 @@
 .Routes:active {
   color: #f9a825;
 }
+
+@media screen and (max-width: 600px) {
+  .header-image img {
+    height: 23px;
+  }
+}
