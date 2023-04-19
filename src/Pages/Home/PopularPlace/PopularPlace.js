@@ -16,7 +16,7 @@ const responsive = {
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 2,
-    slidesToSlide: 1, 
+    slidesToSlide: 1,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -31,66 +31,67 @@ const PopularPlace = () => {
       <h1 className="font-bold text-4xl text-center mt-20 mb-12">
         Popular Tour Places
       </h1>
-      <Carousel
-        swipeable={false}
-        draggable={false}
-        showDots={true}
-        responsive={responsive}
-        ssr={true} 
-        infinite={true}
-        autoPlay={true}
-        autoPlaySpeed={1500}
-        keyBoardControl={false}
-        customTransition="all .5"
-        transitionDuration={500}
-        containerClass="carousel-container"
-        removeArrowOnDeviceType={["tablet", "mobile" , "desktop"]}
-        dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
-        className="max-w-screen-xl mx-auto"
-      >
-        <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none">
-          <img src={paris} alt="Shoes" />
-          <div className="card-body">
-            <h2 className="font-bold text-2xl">Paris</h2>
-            <h2 className="font-semibold text-xl">France</h2>
-            <p className="font-semibold text-xl text-yellow-500">$2800</p>
+      <div className="max-w-screen-xl mx-auto px-10">
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          responsive={responsive}
+          ssr={true}
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={1500}
+          keyBoardControl={false}
+          customTransition="all .5"
+          transitionDuration={500}
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+          
+        >
+          <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none">
+            <img src={paris} alt="Shoes" />
+            <div className="card-body">
+              <h2 className="font-bold text-2xl">Paris</h2>
+              <h2 className="font-semibold text-xl">France</h2>
+              <p className="font-semibold text-xl text-yellow-500">$2800</p>
+            </div>
           </div>
-        </div>
-        <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none ">
-          <img src={santorini} alt="Shoes" />
-          <div className="card-body">
-            <h2 className="font-bold text-2xl">Santorini</h2>
-            <h2 className="font-semibold text-xl">Greece</h2>
-            <p className="font-semibold text-xl text-yellow-500">$1800</p>
+          <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none ">
+            <img src={santorini} alt="Shoes" />
+            <div className="card-body">
+              <h2 className="font-bold text-2xl">Santorini</h2>
+              <h2 className="font-semibold text-xl">Greece</h2>
+              <p className="font-semibold text-xl text-yellow-500">$1800</p>
+            </div>
           </div>
-        </div>
-        <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none">
-          <img src={tokyo} alt="Shoes" />
-          <div className="card-body">
-            <h2 className="font-bold text-2xl">Tokyo</h2>
-            <h2 className="font-semibold text-xl">Japan</h2>
-            <p className="font-semibold text-xl text-yellow-500">$2200</p>
+          <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none">
+            <img src={tokyo} alt="Shoes" />
+            <div className="card-body">
+              <h2 className="font-bold text-2xl">Tokyo</h2>
+              <h2 className="font-semibold text-xl">Japan</h2>
+              <p className="font-semibold text-xl text-yellow-500">$2200</p>
+            </div>
           </div>
-        </div>
-        <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none">
-          <img src={bali} alt="Shoes" />
-          <div className="card-body">
-            <h2 className="font-bold text-2xl">Bali</h2>
-            <h2 className="font-semibold text-xl">Indonesia</h2>
-            <p className="font-semibold text-xl text-yellow-500">$1400</p>
+          <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none">
+            <img src={bali} alt="Shoes" />
+            <div className="card-body">
+              <h2 className="font-bold text-2xl">Bali</h2>
+              <h2 className="font-semibold text-xl">Indonesia</h2>
+              <p className="font-semibold text-xl text-yellow-500">$1400</p>
+            </div>
           </div>
-        </div>
-        <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none">
-          <img src={dubai} alt="Shoes" />
-          <div className="card-body">
-            <h2 className="font-bold text-2xl">Dubai</h2>
-            <h2 className="font-semibold text-xl">UAE</h2>
-            <p className="font-semibold text-xl text-yellow-500">$2500</p>
+          <div className="card card-compact w-96 bg-base-100 shadow-2xl rounded-none">
+            <img src={dubai} alt="Shoes" />
+            <div className="card-body">
+              <h2 className="font-bold text-2xl">Dubai</h2>
+              <h2 className="font-semibold text-xl">UAE</h2>
+              <p className="font-semibold text-xl text-yellow-500">$2500</p>
+            </div>
           </div>
-        </div>
-      </Carousel>
-      ;
+        </Carousel>
+      </div>
     </div>
   );
 };
