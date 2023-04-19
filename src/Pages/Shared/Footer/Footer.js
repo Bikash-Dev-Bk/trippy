@@ -4,9 +4,9 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <div>
-      <footer className="footer p-10 text-base-content footerContainer ">
-        <div className=" lg:mx-auto">
+    <div className="footerContainer">
+      <footer className="footer p-10 text-base-content max-w-screen-xl mx-auto footer-Content">
+        <div >
           <div className="footer-image">
           <img src={logo} alt="" />
           </div>
@@ -16,21 +16,21 @@ const Footer = () => {
             Providing Travel package since 2012
           </p>
         </div>
-        <div className=" lg:mx-auto">
+        <div >
           <span className="footer-title">Services</span>
           <a href="/" className="link link-hover">Tour</a>
           <a href="/" className="link link-hover">Ticket</a>
           <a href="/" className="link link-hover">Hotel</a>
           <a href="/" className="link link-hover">Tour Guide</a>
         </div>
-        <div className=" lg:mx-auto">
+        <div>
           <span className="footer-title">Company</span>
           <a href="/about" className="link link-hover">About us</a>
           <a href="/contact" className="link link-hover">Contact</a>
           <a href="/" className="link link-hover">Jobs</a>
           <a href="/" className="link link-hover">Press kit</a>
         </div>
-        <div className=" lg:mx-auto">
+        <div>
           <span className="footer-title">Legal</span>
           <a href="/" className="link link-hover">Terms of use</a>
           <a href="/" className="link link-hover">Privacy policy</a>
